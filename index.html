@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niel Nicho Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
+        body { background-color: #000; color: #ff69b4; overflow-x: hidden; }
+
+        /* Navbar */
+        nav { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#000; position:fixed; width:100%; z-index:100; }
+        nav .logo { font-size:1.8rem; font-weight:bold; color:#ff69b4; }
+        nav ul { list-style:none; display:flex; gap:20px; }
+        nav ul li a { color:#ff69b4; text-decoration:none; font-weight:500; transition:0.3s; }
+        nav ul li a:hover, nav ul li a:focus { color:#ff1493; }
+
+        /* Sections */
+        section { min-height:100vh; display:flex; justify-content:center; align-items:center; text-align:center; padding:50px 20px; }
+
+        /* Home Section with Profile */
+        #home .profile-container { display:flex; flex-direction:column; align-items:center; }
+        #home img { width:150px; height:150px; border-radius:50%; border:3px solid #ff69b4; margin-bottom:20px; object-fit:cover; }
+        #home h1 { font-size:3rem; }
+        #home p { font-size:1.2rem; margin-top:10px; max-width:500px; }
+
+        /* About Section */
+        #about p { max-width:600px; margin:auto; line-height:1.6; }
+        #about h2, #skills h2, #photos h2, #contact h2 { color:#ff1493; margin-bottom:20px; }
+
+        /* Skills Section */
+        #skills .skill { font-size:1.5rem; }
+
+        /* My Photos */
+        #photos .gallery { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
+        #photos .gallery img { width:100%; border-radius:10px; transition: transform 0.5s; }
+        #photos .gallery img:hover { transform: scale(1.1) rotate(5deg); }
+
+        /* Contact */
+        #contact form { display:flex; flex-direction:column; gap:15px; max-width:400px; margin:auto; }
+        #contact form input, #contact form textarea { padding:10px; border:none; border-radius:5px; background:#111; color:#ff69b4; }
+        #contact form button { background:#ff1493; color:#fff; border:none; padding:10px; border-radius:5px; cursor:pointer; transition:0.3s; }
+        #contact form button:hover, #contact form button:focus { background:#ff69b4; }
+
+        /* Footer */
+        footer { text-align:center; padding:20px; background:#000; }
+
+        @media(max-width:768px){ nav ul{flex-direction:column; gap:10px;} }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Niel Nicho</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="profile-container">
+            <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/476440615_942332971354925_5173333950249201027_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE6hC728AjMRTcVNOemQD70bGUEvQJi1mhsZQS9AmLWaG7Nme8SJGXjtNRLMMIHvaIq2FPEfThazod16VNsEjk7&_nc_ohc=8d_0OOMiJKkQ7kNvwG3xXPQ&_nc_oc=AdkHAxO1VDRM2h8FJtzF8lR5gqLA7_-d9GrdJnRDLLc85qfNTpiIUqWM8M7LX2kpUtDNWeBDvUGHzAqQpFygZdmX&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=pt09Rx7471hJBfjBXHpqJw&oh=00_Afla-WWqCmkhwaVmG5pekLEKhE3FWFIoTQpn_-xlXWPDaQ&oe=693D4930" alt="Niel Nicho Profile">
+            <h1>Hi, I'm Niel Nicho</h1>
+            <p>BSIS Student passionate about life and design.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div>
+            <h2>About Me</h2>
+            <p>Hello! I'm a BSIS student who loves exploring life through design. Creativity and passion guide my journey, and I aim to inspire with my work and ideas.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div>
+            <h2>Skills</h2>
+            <p class="skill">Designer</p>
+        </div>
+    </section>
+
+    <section id="photos">
+        <div>
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/476440615_942332971354925_5173333950249201027_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE6hC728AjMRTcVNOemQD70bGUEvQJi1mhsZQS9AmLWaG7Nme8SJGXjtNRLMMIHvaIq2FPEfThazod16VNsEjk7&_nc_ohc=8d_0OOMiJKkQ7kNvwG3xXPQ&_nc_oc=AdkHAxO1VDRM2h8FJtzF8lR5gqLA7_-d9GrdJnRDLLc85qfNTpiIUqWM8M7LX2kpUtDNWeBDvUGHzAqQpFygZdmX&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=pt09Rx7471hJBfjBXHpqJw&oh=00_Afla-WWqCmkhwaVmG5pekLEKhE3FWFIoTQpn_-xlXWPDaQ&oe=693D4930" alt="Photo 1">
+                <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/476440615_942332971354925_5173333950249201027_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE6hC728AjMRTcVNOemQD70bGUEvQJi1mhsZQS9AmLWaG7Nme8SJGXjtNRLMMIHvaIq2FPEfThazod16VNsEjk7&_nc_ohc=8d_0OOMiJKkQ7kNvwG3xXPQ&_nc_oc=AdkHAxO1VDRM2h8FJtzF8lR5gqLA7_-d9GrdJnRDLLc85qfNTpiIUqWM8M7LX2kpUtDNWeBDvUGHzAqQpFygZdmX&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=pt09Rx7471hJBfjBXHpqJw&oh=00_Afla-WWqCmkhwaVmG5pekLEKhE3FWFIoTQpn_-xlXWPDaQ&oe=693D4930" alt="Photo 2">
+                <img src="https://scontent.fceb1-5.fna.fbcdn.net/v/t39.30808-6/476440615_942332971354925_5173333950249201027_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE6hC728AjMRTcVNOemQD70bGUEvQJi1mhsZQS9AmLWaG7Nme8SJGXjtNRLMMIHvaIq2FPEfThazod16VNsEjk7&_nc_ohc=8d_0OOMiJKkQ7kNvwG3xXPQ&_nc_oc=AdkHAxO1VDRM2h8FJtzF8lR5gqLA7_-d9GrdJnRDLLc85qfNTpiIUqWM8M7LX2kpUtDNWeBDvUGHzAqQpFygZdmX&_nc_zt=23&_nc_ht=scontent.fceb1-5.fna&_nc_gid=pt09Rx7471hJBfjBXHpqJw&oh=00_Afla-WWqCmkhwaVmG5pekLEKhE3FWFIoTQpn_-xlXWPDaQ&oe=693D4930" alt="Photo 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <h2>Contact Me</h2>
+            <form action="index.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" name="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Niel Nicho. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
